@@ -4,7 +4,7 @@
 </script>
 
 {#if currency.manual}
-	<button class="rounded {currency.bgColor} p-2 text-white" on:click={() => currency.add(1)}>
+	<button class="rounded {currency.bgColor} p-2 text-white" on:mousedown={() => currency.add(1)}>
 		+1 {currency.name}
 	</button>
 {/if}
